@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.AddProtocolActivity"
+    android:background="@color/black">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tool_bar"
+        android:background="@color/colorPrimary">
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <RelativeLayout
+        android:layout_below="@+id/tool_bar"
+        android:layout_marginBottom="8sp"
+        android:layout_marginLeft="8sp"
+        android:layout_marginRight="8sp"
+        android:layout_marginTop="8sp"
+        android:id="@+id/rl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+<!--        <TextView-->
+<!--            android:fontFamily="@font/lato_light"-->
+<!--            android:id="@+id/text1"-->
+<!--            android:layout_marginLeft="8dp"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginTop="8sp"-->
+<!--            android:textColor="@color/white"-->
+<!--            android:textSize="16sp"-->
+<!--            android:textStyle="bold"-->
+<!--            android:text="protocolType : "/>-->
+
+        <EditText
+            android:layout_marginLeft="8sp"
+            android:id="@+id/edit_protocolType"
+            android:textColorHint="@color/dark_gray"
+            android:textColor="@color/white"
+            android:hint="Please Enter protocolType"
+            android:textSize="14sp"
+            android:fontFamily="@font/lato_light"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/text1" />
+
+        <ImageView
+            android:layout_centerInParent="true"
+            android:layout_alignParentEnd="true"
+            android:layout_width="18sp"
+            android:layout_height="18sp"
+            android:fontFamily="@font/lato_light"
+            android:text="Add"
+            android:textColor="@color/white"
+            android:id="@+id/btn_add_protocol"
+            android:src="@drawable/ic_plus"/>
+
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/recyclerView"
+        android:layout_below="@+id/rl"/>
+
+
+
+
+
+
+<!--    <EditText-->
+<!--        android:visibility="gone"-->
+<!--        android:id="@+id/edit_protocol"-->
+<!--        android:layout_alignParentBottom="true"-->
+<!--        android:textColorHint="@color/dark_gray"-->
+<!--        android:textColor="@color/white"-->
+<!--        android:hint="Please Enter protocolType"-->
+<!--        android:textSize="14sp"-->
+<!--        android:fontFamily="@font/lato_light"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_toLeftOf="@+id/fab_add"-->
+<!--        android:layout_marginBottom="18sp"-->
+<!--        android:layout_marginLeft="18sp"-->
+<!--        android:layout_marginRight="18sp"-->
+<!--        android:layout_marginTop="18sp"/>-->
+
+<!--    <com.google.android.material.floatingactionbutton.FloatingActionButton-->
+<!--        android:id="@+id/fab_add"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginBottom="8sp"-->
+<!--        android:layout_marginLeft="18sp"-->
+<!--        android:layout_marginRight="18sp"-->
+<!--        android:layout_marginTop="18sp"-->
+<!--        android:clickable="true"-->
+<!--        android:tint="@android:color/white"-->
+<!--        app:fabSize="normal"-->
+<!--        android:layout_alignParentEnd="true"-->
+<!--        android:layout_alignParentBottom="true"-->
+<!--        app:rippleColor="@android:color/white"-->
+<!--        app:backgroundTint="@color/colorPrimary"-->
+<!--        app:srcCompat="@drawable/ic_plus" />-->
+
+
+</RelativeLayout>

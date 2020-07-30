@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:background="@color/black">
+
+    <ImageView
+        android:layout_marginStart="10sp"
+        android:layout_marginTop="18sp"
+        android:layout_width="20sp"
+        android:layout_height="20sp"
+        android:src="@drawable/ic_check_circle"
+        android:id="@+id/circle"/>
+    <androidx.cardview.widget.CardView
+        android:layout_toRightOf="@+id/circle"
+        android:id="@+id/cv_main"
+        android:elevation="5dp"
+        card_view:cardElevation="2dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="0dp">
+
+        <include layout="@layout/sample_panel_pay_account" />
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

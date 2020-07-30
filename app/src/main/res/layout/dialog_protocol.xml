@@ -1,0 +1,154 @@
+<RelativeLayout android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_black_br_white"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_margin="20sp">
+
+
+                <TextView
+                    android:padding="4sp"
+                    android:textSize="12sp"
+                    android:layout_margin="8sp"
+                    android:id="@+id/edit_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:background="@color/dark_gray1"
+                    android:fontFamily="@font/lato_light"
+                    android:text=""
+                    android:textColor="@color/white" />
+
+
+                <TextView
+                    android:layout_below="@+id/edit_text"
+                    android:padding="4sp"
+                    android:textSize="12sp"
+                    android:layout_marginLeft="8sp"
+                    android:layout_marginRight="8sp"
+                    android:id="@+id/text_first_jsonObject"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/dark_gray1"
+                    android:fontFamily="@font/lato_light"
+                    android:text=""
+                    android:textColor="@color/white"/>
+
+                <ScrollView
+                    android:layout_marginTop="8sp"
+                    android:layout_marginBottom="8sp"
+                    android:layout_above="@+id/text_last_jsonObject"
+                    android:layout_below="@+id/text_first_jsonObject"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                <EditText
+                    android:layout_gravity="start"
+                    android:gravity="start"
+                    android:padding="4sp"
+                    android:textSize="12sp"
+                    android:hint="Please Enter JsonObject"
+                    android:textColorHint="@color/dark_gray"
+                    android:layout_margin="8sp"
+                    android:id="@+id/edit_jsonObject"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/black"
+                    android:fontFamily="@font/lato_light"
+                    android:text=""
+                    android:textColor="@color/white" />
+
+                </ScrollView>
+
+                <TextView
+                    android:layout_above="@+id/rl_right_wrong"
+                    android:padding="4sp"
+                    android:textSize="12sp"
+                    android:layout_marginLeft="8sp"
+                    android:layout_marginRight="8sp"
+                    android:layout_marginBottom="8sp"
+                    android:id="@+id/text_last_jsonObject"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/dark_gray1"
+                    android:fontFamily="@font/lato_light"
+                    android:text="}"
+                    android:textColor="@color/white"/>
+
+
+
+
+    <RelativeLayout
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/rl_right_wrong">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_toLeftOf="@+id/btn_save"
+            style="@style/Widget.AppCompat.Button"
+            android:background="@drawable/button_background"
+            android:text="Default"
+            android:textSize="12sp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/lato_light"
+            android:layout_marginTop="8sp"
+            android:id="@+id/btn_default"
+            android:layout_centerInParent="true"
+            android:layout_width="80sp"
+            android:layout_height="25sp"
+            android:layout_marginRight="8sp"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_toLeftOf="@+id/btn_cancel"
+            style="@style/Widget.AppCompat.Button"
+            android:background="@drawable/button_background"
+            android:text="Save"
+            android:textSize="12sp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/lato_light"
+            android:layout_marginTop="8sp"
+            android:id="@+id/btn_save"
+            android:layout_centerInParent="true"
+            android:layout_width="80sp"
+            android:layout_height="25sp"
+            android:layout_marginRight="8sp"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            style="@style/Widget.AppCompat.Button"
+            android:background="@drawable/button_background"
+            android:text="Cancel"
+            android:id="@+id/btn_cancel"
+            android:textSize="12sp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/lato_light"
+            android:layout_marginTop="8sp"
+            android:layout_centerInParent="true"
+            android:layout_width="80sp"
+            android:layout_height="25sp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="8sp"/>
+
+
+    </RelativeLayout>
+
+
+
+    <!--    </ScrollView>-->
+
+
+
+
+
+    <!--            <View-->
+    <!--                android:layout_marginTop="4sp"-->
+    <!--                android:layout_width="match_parent"-->
+    <!--                android:layout_height="1sp"-->
+    <!--                android:background="@color/white"/>-->
+
+
+</RelativeLayout>

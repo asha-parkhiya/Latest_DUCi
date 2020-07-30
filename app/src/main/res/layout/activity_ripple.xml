@@ -1,0 +1,301 @@
+<com.sparkle.devicescanner.Utils.RippleEffect
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:rb_color="@color/underline_Light_color"
+    app:rb_duration="4000"
+    app:rb_radius="48dp"
+    app:rb_rippleAmount="5"
+    app:rb_scale="5"
+    app:rb_strokeWidth="2dp"
+    app:rb_type="strokeRipple">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tool_bar"
+        android:background="@color/colorPrimary">
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <!--<Button-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:id="@+id/btn_second"-->
+        <!--android:text="Wifi Activity"/>-->
+
+    <!--<ListView-->
+        <!--android:layout_below="@+id/btn_second"-->
+        <!--android:layout_marginTop="16dp"-->
+        <!--android:id="@+id/android:list"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"/>-->
+
+    <ImageView
+        android:id="@+id/centerImage"
+        android:layout_width="78dp"
+        android:layout_height="78dp"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/hot_spot" />
+
+    <RelativeLayout
+        android:id="@+id/rl_final"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="265dp"></RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/rl_foundDevice1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/centerImage"
+        android:layout_toLeftOf="@id/centerImage"
+        android:layout_marginRight="6dp"
+        android:layout_marginBottom="32dp"
+        android:visibility="invisible">
+
+        <ImageView
+            android:layout_centerInParent="true"
+            android:id="@+id/foundDevice1"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            app:srcCompat="@drawable/ic_placeholder" />
+
+        <TextView
+            android:fontFamily="sans-serif"
+            android:textColor="@color/underline_color"
+            android:textSize="11dp"
+            android:id="@+id/foundDevicetext1"
+            android:layout_marginTop="8dp"
+            android:textAlignment="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/foundDevice1"
+            android:text="Android1"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_foundDevice2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/centerImage"
+        android:layout_toRightOf="@id/centerImage"
+        android:layout_marginLeft="6dp"
+        android:layout_marginBottom="16dp"
+        android:visibility="invisible">
+
+        <ImageView
+            android:layout_centerInParent="true"
+            android:id="@+id/foundDevice2"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            app:srcCompat="@drawable/ic_placeholder" />
+
+        <TextView
+            android:fontFamily="sans-serif"
+            android:textColor="@color/underline_color"
+            android:textSize="11dp"
+            android:id="@+id/foundDevicetext2"
+            android:layout_marginTop="8dp"
+            android:textAlignment="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/foundDevice2"
+            android:text="Android2"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_foundDevice3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/centerImage"
+        android:layout_toRightOf="@id/centerImage"
+        android:layout_marginLeft="36dp"
+        android:layout_marginTop="16dp"
+        android:visibility="invisible">
+
+        <ImageView
+            android:layout_centerInParent="true"
+            android:id="@+id/foundDevice3"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            app:srcCompat="@drawable/ic_placeholder" />
+
+        <TextView
+            android:fontFamily="sans-serif"
+            android:textColor="@color/underline_color"
+            android:textSize="11dp"
+            android:id="@+id/foundDevicetext3"
+            android:layout_marginTop="8dp"
+            android:textAlignment="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/foundDevice3"
+            android:text="Android3"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_foundDevice4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/centerImage"
+        android:layout_toLeftOf="@id/centerImage"
+        android:layout_marginTop="48dp"
+        android:layout_marginRight="-24dp"
+        android:visibility="invisible">
+
+        <ImageView
+            android:layout_centerInParent="true"
+            android:id="@+id/foundDevice4"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            app:srcCompat="@drawable/ic_placeholder" />
+
+        <TextView
+            android:fontFamily="sans-serif"
+            android:textColor="@color/underline_color"
+            android:textSize="11dp"
+            android:id="@+id/foundDevicetext4"
+            android:layout_marginTop="8dp"
+            android:textAlignment="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/foundDevice4"
+            android:text="Android4"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_foundDevice5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/centerImage"
+        android:layout_marginTop="-32dp"
+        android:layout_toLeftOf="@id/centerImage"
+        android:layout_marginRight="56dp"
+        android:visibility="invisible">
+
+        <ImageView
+            android:layout_centerInParent="true"
+            android:id="@+id/foundDevice5"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            app:srcCompat="@drawable/ic_placeholder" />
+
+        <TextView
+            android:fontFamily="sans-serif"
+            android:textColor="@color/underline_color"
+            android:textSize="11dp"
+            android:id="@+id/foundDevicetext5"
+            android:layout_marginTop="8dp"
+            android:textAlignment="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/foundDevice5"
+            android:text="Android5"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_foundDevice6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/centerImage"
+        android:layout_toLeftOf="@id/centerImage"
+        android:layout_marginRight="32dp"
+        android:layout_marginBottom="-48dp"
+        android:visibility="invisible">
+
+        <ImageView
+            android:layout_centerInParent="true"
+            android:id="@+id/foundDevice6"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            app:srcCompat="@drawable/ic_placeholder" />
+
+        <TextView
+            android:fontFamily="sans-serif"
+            android:textColor="@color/underline_color"
+            android:textSize="11dp"
+            android:id="@+id/foundDevicetext6"
+            android:layout_marginTop="8dp"
+            android:textAlignment="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/foundDevice6"
+            android:text="Android1"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_foundDevice7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/centerImage"
+        android:layout_toRightOf="@id/centerImage"
+        android:layout_marginLeft="32dp"
+        android:layout_marginBottom="-48dp"
+        android:visibility="invisible">
+
+        <ImageView
+            android:layout_centerInParent="true"
+            android:id="@+id/foundDevice7"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            app:srcCompat="@drawable/ic_placeholder" />
+
+        <TextView
+            android:fontFamily="sans-serif"
+            android:textColor="@color/underline_color"
+            android:textSize="11dp"
+            android:id="@+id/foundDevicetext7"
+            android:layout_marginTop="8dp"
+            android:textAlignment="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/foundDevice7"
+            android:text="Android2"/>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/rl_foundDevice8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/centerImage"
+        android:layout_toRightOf="@id/centerImage"
+        android:layout_marginLeft="78dp"
+        android:layout_marginBottom="-112dp"
+        android:visibility="invisible">
+
+        <ImageView
+            android:layout_centerInParent="true"
+            android:id="@+id/foundDevice8"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            app:srcCompat="@drawable/ic_placeholder" />
+
+        <TextView
+            android:fontFamily="sans-serif"
+            android:textColor="@color/underline_color"
+            android:textSize="11dp"
+            android:id="@+id/foundDevicetext8"
+            android:layout_marginTop="8dp"
+            android:textAlignment="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/foundDevice8"
+            android:text="Android2"/>
+
+    </RelativeLayout>
+
+</com.sparkle.devicescanner.Utils.RippleEffect>

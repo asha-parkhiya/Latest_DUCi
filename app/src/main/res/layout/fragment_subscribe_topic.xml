@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragment.SubscribeTopicFragment">
+
+<!--   <androidx.recyclerview.widget.RecyclerView-->
+<!--       android:layout_width="match_parent"-->
+<!--       android:layout_height="match_parent"-->
+<!--       android:id="@+id/rv_usb_topic"-->
+<!--       ></androidx.recyclerview.widget.RecyclerView>-->
+
+   <ScrollView
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+
+      <RelativeLayout
+          android:layout_width="match_parent"
+          android:layout_height="match_parent">
+
+         <androidx.recyclerview.widget.RecyclerView
+             android:layout_marginTop="4sp"
+             android:layout_marginLeft="4sp"
+             android:layout_marginRight="4sp"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:id="@+id/rv_usb_topic"/>
+
+         <androidx.recyclerview.widget.RecyclerView
+             android:layout_marginLeft="4sp"
+             android:layout_marginRight="4sp"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_below="@+id/rv_usb_topic"
+             android:id="@+id/rv_wifi_topic"/>
+
+         <androidx.recyclerview.widget.RecyclerView
+             android:layout_marginLeft="4sp"
+             android:layout_marginRight="4sp"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_below="@+id/rv_wifi_topic"
+             android:id="@+id/rv_bluetooth_topic"/>
+
+      </RelativeLayout>
+   </ScrollView>
+
+</FrameLayout>

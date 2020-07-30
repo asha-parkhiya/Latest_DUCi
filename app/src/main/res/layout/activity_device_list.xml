@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.DeviceListActivity"
+    android:background="@color/black">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tool_bar"
+        android:background="@color/colorPrimary">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Device List"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="22sp"/>
+
+            <ImageView
+                android:id="@+id/btn_scan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/ic_refresh_icon"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20sp"
+                />
+        </RelativeLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <!--    <ListView-->
+    <!--        android:layout_below="@+id/tool_bar"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="match_parent"-->
+    <!--        android:id="@android:id/list"/>-->
+
+
+    <ScrollView
+        android:layout_below="@+id/tool_bar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_marginTop="4sp"
+                android:layout_marginLeft="4sp"
+                android:layout_marginRight="4sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/rv_wifi_device_list"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_marginLeft="4sp"
+                android:layout_marginRight="4sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rv_wifi_device_list"
+                android:id="@+id/rv_bluetooth_device_list"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_marginLeft="4sp"
+                android:layout_marginRight="4sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rv_bluetooth_device_list"
+                android:id="@+id/rv_datacable_device_list"/>
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

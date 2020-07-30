@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+
+    <com.github.florent37.expansionpanel.ExpansionHeader
+        android:layout_width="match_parent"
+        android:background="@color/black"
+        android:layout_height="wrap_content"
+        app:expansion_headerIndicator="@id/headerIndicator"
+        app:expansion_layout="@id/expansionLayout"
+        app:expansion_toggleOnClick="true">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8sp"
+            android:layout_marginEnd="8dp">
+
+            <TextView
+                android:id="@+id/tv_data"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_toRightOf="@+id/rl_image"
+                android:gravity="center_vertical"
+                android:text="Pay Event Date"
+                android:textAlignment="gravity"
+                android:fontFamily="@font/lato_light"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:textColor="@color/white" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/headerIndicator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="16dp"
+                android:adjustViewBounds="true"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                app:srcCompat="@drawable/ic_arrow_right_24px" />
+<!--            "Details ->"-->
+        </RelativeLayout>
+
+    </com.github.florent37.expansionpanel.ExpansionHeader>
+
+    <com.github.florent37.expansionpanel.ExpansionLayout
+        android:id="@+id/expansionLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="0dp"
+        android:background="@color/dark_gray"
+        app:expansion_expanded="false">
+
+
+<!--        <androidx.core.widget.NestedScrollView-->
+<!--            android:id="@+id/nested_scroll_view"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:scrollbars="none"-->
+<!--            android:scrollingCache="true">-->
+
+        <LinearLayout
+            android:id="@+id/container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/black"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_margin="8sp"
+                    android:id="@+id/tv_command"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:background="@color/black"
+                    android:fontFamily="@font/lato_light"
+                    android:text=""
+                    android:textColor="@color/white" />
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+
+<!--        </androidx.core.widget.NestedScrollView>-->
+
+    </com.github.florent37.expansionpanel.ExpansionLayout>
+</LinearLayout>

@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+
+    <com.github.florent37.expansionpanel.ExpansionHeader
+        android:layout_width="match_parent"
+        android:background="#EEE"
+        android:layout_height="wrap_content"
+        app:expansion_headerIndicator="@id/headerIndicator"
+        app:expansion_layout="@id/expansionLayout"
+        app:expansion_toggleOnClick="true">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/wifi_symbol"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_blueetooth_logo"
+                android:layout_alignParentStart="true"
+                tools:ignore="VectorDrawableCompat"
+                android:layout_centerVertical="true"/>
+
+            <TextView
+                android:layout_marginLeft="12sp"
+                android:layout_toRightOf="@+id/wifi_symbol"
+                android:id="@+id/tv_bluetooth_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15sp"
+                android:text="Trip name"
+                android:textColor="#3E3E3E"
+                android:textSize="15sp"/>
+
+<!--            <TextView-->
+<!--                android:id="@+id/tv_header_title_down"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_below="@+id/tv_header_title_top"-->
+<!--                android:layout_marginTop="5dp"-->
+<!--                android:layout_marginBottom="10dp"-->
+<!--                android:text="AAAAAA"-->
+<!--                android:textColor="#3E3E3E"-->
+<!--                android:textSize="15sp" />-->
+
+            <pl.droidsonroids.gif.GifImageView
+                android:layout_marginRight="12sp"
+                android:layout_centerInParent="true"
+                android:layout_width="26sp"
+                android:layout_height="26sp"
+                android:layout_toLeftOf="@+id/headerIndicator"
+                android:id="@+id/heart_symbol"
+                android:src="@drawable/giphy" />
+
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/headerIndicator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="16dp"
+                android:adjustViewBounds="true"
+                app:srcCompat="@drawable/ic_expansion_header_indicator_grey_24dp" />
+
+        </RelativeLayout>
+
+    </com.github.florent37.expansionpanel.ExpansionHeader>
+
+    <com.github.florent37.expansionpanel.ExpansionLayout
+        android:id="@+id/expansionLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="0dp"
+        android:background="@color/white"
+        app:expansion_expanded="false">
+
+        <LinearLayout
+            android:id="@+id/container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <TextView
+                    android:textStyle="bold"
+                    android:layout_width="0dp"
+                    android:layout_height="45dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_weight="1"
+                    android:background="@color/white"
+                    android:gravity="start|center_vertical"
+                    android:padding="5dp"
+                    android:text="Name"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/tv_bluetooth_name1"
+                    android:layout_width="0dp"
+                    android:layout_height="45dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_weight="2"
+                    android:background="@color/white"
+                    android:gravity="start|center_vertical"
+                    android:padding="5dp"
+                    android:text="content"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:orientation="horizontal"-->
+<!--                android:weightSum="2">-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="0dp"-->
+<!--                    android:layout_height="45dp"-->
+<!--                    android:layout_marginStart="10dp"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:background="@color/white"-->
+<!--                    android:gravity="start|center_vertical"-->
+<!--                    android:padding="5dp"-->
+<!--                    android:text="Bluetooth Address"-->
+<!--                    android:textSize="15sp" />-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/tv_bluetooth_address"-->
+<!--                    android:layout_width="0dp"-->
+<!--                    android:layout_height="45dp"-->
+<!--                    android:layout_marginEnd="10dp"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:background="@color/white"-->
+<!--                    android:gravity="start|center_vertical"-->
+<!--                    android:padding="5dp"-->
+<!--                    android:text="content"-->
+<!--                    android:textSize="15sp" />-->
+<!--            </LinearLayout>-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <TextView
+                    android:textStyle="bold"
+                    android:layout_width="0dp"
+                    android:layout_height="45dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_weight="1"
+                    android:background="@color/white"
+                    android:gravity="start|center_vertical"
+                    android:padding="5dp"
+                    android:text="Code"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:layout_gravity="center"
+                    android:maxLines="1"
+                    android:id="@+id/tv_code"
+                    android:layout_width="0dp"
+                    android:layout_height="45dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_weight="2"
+                    android:background="@color/white"
+                    android:gravity="start|center_vertical"
+                    android:padding="5dp"
+                    android:text="content"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <Button
+                    android:text="Write Code"
+                    android:layout_gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/btn_write_code"
+                    android:background="@drawable/btn_back_disable"/>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </com.github.florent37.expansionpanel.ExpansionLayout>
+</LinearLayout>

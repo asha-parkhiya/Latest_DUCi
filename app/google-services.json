@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "955455583813",
+    "firebase_url": "https://device-scanner-b28b0.firebaseio.com",
+    "project_id": "device-scanner-b28b0",
+    "storage_bucket": "device-scanner-b28b0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:955455583813:android:80b3abe9c45d03a449152c",
+        "android_client_info": {
+          "package_name": "com.sparkle.devicescanner"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "955455583813-kf621ci49t9kc1fdf53b8s281ij3v9go.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB6d3-1TtPHxE09CfV7sMG1jKnKng8D_c8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "955455583813-kf621ci49t9kc1fdf53b8s281ij3v9go.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

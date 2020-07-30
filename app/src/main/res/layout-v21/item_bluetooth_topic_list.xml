@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/itemview"
+    android:orientation="horizontal"
+    android:layout_marginLeft="5dp"
+    android:layout_height="wrap_content"
+    android:layout_marginRight="5dp"
+    android:layout_marginTop="5dp"
+    android:background="#EEE"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_marginBottom="0.5dp">
+
+    <RelativeLayout
+        android:id="@+id/rl_image"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_margin="5dp"
+        android:visibility="visible">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/cv_color"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:scaleType="centerCrop"
+            android:layout_centerInParent="true"
+            android:src="@drawable/ic_blueetooth_logo"
+            tools:ignore="VectorDrawableCompat" />
+
+        <!--<TextView-->
+        <!--android:id="@+id/tv_letter"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_centerInParent="true"-->
+        <!--android:gravity="center"-->
+        <!--android:text="C"-->
+        <!--android:textAlignment="gravity"-->
+        <!--android:textAllCaps="true"-->
+        <!--android:textColor="@color/white"-->
+        <!--android:textSize="28sp" />-->
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_centerInParent="true"
+        android:layout_marginTop="6dp"
+        android:id="@+id/tv_wifi_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/rl_image"
+        android:gravity="center_vertical"
+        android:text="Wifi Name"
+        android:textAlignment="gravity"
+        android:fontFamily="sans-serif"
+        android:textSize="18sp"
+        android:layout_marginLeft="8dp" />
+
+
+    <!--<TextView-->
+    <!--android:fontFamily="sans-serif"-->
+    <!--android:id="@+id/tv_lname"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginStart="10dp"-->
+    <!--android:layout_marginEnd="0dp"-->
+    <!--android:layout_toRightOf="@+id/tv_fname"-->
+    <!--android:gravity="center_vertical"-->
+    <!--android:text="hello"-->
+    <!--android:textSize="14sp"-->
+    <!--android:layout_marginLeft="10dp"-->
+    <!--android:layout_marginRight="0dp" />-->
+
+<!--    <TextView-->
+<!--        android:layout_marginTop="4dp"-->
+<!--        android:id="@+id/tv_wifi_bssid"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@+id/tv_wifi_name"-->
+<!--        android:layout_toRightOf="@+id/rl_image"-->
+<!--        android:gravity="center_vertical"-->
+<!--        android:text="9785462385"-->
+<!--        android:textSize="14sp"-->
+<!--        android:fontFamily="sans-serif"-->
+<!--        android:layout_marginLeft="8dp"/>-->
+
+<!--    <Button-->
+<!--        android:layout_marginRight="8dp"-->
+<!--        android:textStyle="bold"-->
+<!--        android:textColor="@color/white"-->
+<!--        android:layout_centerInParent="true"-->
+<!--        android:layout_alignParentEnd="true"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="40dp"-->
+<!--        android:layout_alignParentRight="true"-->
+<!--        android:text="WRITE CODE"-->
+<!--        android:background="@drawable/btn_backgroundcolor"-->
+<!--        android:id="@+id/btn_write_code"/>-->
+</RelativeLayout>

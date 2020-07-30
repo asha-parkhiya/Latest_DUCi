@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.sparkle.devicescanner">
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_INTERNAL_STORAGE" />
+     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <application
+        android:name=".App"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+        android:usesCleartextTraffic="true"
+        tools:ignore="GoogleAppIndexingWarning">
+        <activity android:name=".Activity.AddProtocolActivity"></activity>
+        <activity android:name=".Activity.ProtocolTableActivity" />
+        <activity android:name=".Activity.EditProtocolActivity" />
+        <activity
+            android:name=".Activity.DeviceListActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".Activity.ActiveDeviceActivity" />
+        <activity
+            android:name=".Activity.SettingActivity"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ActivityLifecycle"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Activity.BluetoothActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Activity.RippleActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Activity.HomeActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity" /> <!-- <receiver android:name=".services.TimerService" -->
+        <!-- android:enabled="true" -->
+        <!-- android:exported="true" -->
+        <!-- android:permission="android.permission.RECEIVE_B@JonathanPryor"> -->
+        <!-- <intent-filter> -->
+        <!-- <action android:name="com.example.alarm.notifier" /> -->
+        <!-- </intent-filter> -->
+        <!-- </receiver> -->
+<!--        <receiver android:name=".services.WifiBroadCastReceiver" />-->
+
+        <service
+            android:name=".services.UsbService"
+            android:enabled="true"
+            android:exported="true" />
+        <service
+            android:name=".services.MqttService"
+            android:enabled="true"
+            android:exported="true" />
+        <service
+            android:name=".services.WifiService"
+            android:enabled="true" />
+        <service
+            android:name=".services.TimerService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <receiver
+            android:name=".services.Restarter"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="restartservice" />
+            </intent-filter>
+        </receiver>
+
+<!--        <service-->
+<!--            android:name=".services.BluetoothService"-->
+<!--            android:enabled="true"-->
+<!--            android:exported="true" />-->
+
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="fa9abe943e9afd19fc3125a08f02c174331fc1c3" />
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>
